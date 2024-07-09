@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Game Store</title>
+  </head>
+  <body>
+    <header class="website-header">
+      <img
+        class="w-100"
+        src="images/wraper.png"
+        alt="website header background"
+      />
+    </header>
+    <main>
+      <section class="navigation sticky-top">
+        <nav class="navbar navbar-expand-lg col-md-6 col-lg-9 mx-auto">
+          <div class="container-fluid">
+            <a class="navbar-brand text-white" href="#"
+              ><img src="images/logo-sm.png" alt="website logo" class="logo" />
+              GAME REVIEWS</a
+            >
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarNavAltMarkup"
+              aria-controls="navbarNavAltMarkup"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+              <div class="navbar-nav ms-auto menu">
+                <a
+                  class="nav-link active text-white"
+                  aria-current="page"
+                  href="#"
+                  data-category="mmorpg"
+                  >MMORPG</a
+                >
+                <a
+                  class="nav-link text-uppercase text-white"
+                  href="#"
+                  data-category="shooter"
+                  >shooter</a
+                >
+                <a
+                  class="nav-link text-uppercase text-white"
+                  href="#"
+                  data-category="sailing"
+                  >sailing</a
+                >
+                <a
+                  class="nav-link text-uppercase text-white"
+                  href="#"
+                  data-category="permadeath"
+                  >permadeath</a
+                >
+                <a
+                  class="nav-link text-uppercase text-white"
+                  href="#"
+                  data-category="superhero"
+                  >superhero</a
+                >
+                <a
+                  class="nav-link text-uppercase text-white"
+                  href="#"
+                  data-category="pixel"
+                  >pixel</a
+                >
+              </div>
+            </div>
+          </div>
+        </nav>
+      </section>
+      <section class="games my-5">
+        <div class="container">
+          <div class="row g-4" id="gameInfo"></div>
+        </div>
+      </section>
+      <section class="details d-none">
+        <div class="container">
+          <header class="d-flex justify-content-between align-items-center">
+            <h3 class="text-white py-4">Game Details</h3>
+            <button
+              type="button"
+              id="closeBtn"
+              class="btn-close btn-close-white"
+              aria-label="Close"
+            ></button>
+          </header>
+          <div class="row g-4" id="gameDetails"></div>
+        </div>
+      </section>
+      <section
+        class="loader-screen position-fixed d-flex justify-content-center align-items-center d-none"
+      >
+        <span class="loader"></span>
+      </section>
+    </main>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/script.js" type="module"></script>
+  </body>
+</html>
