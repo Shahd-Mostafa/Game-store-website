@@ -7,6 +7,7 @@ export class Games {
     const navLinks = document.querySelectorAll(".nav-link");
     for (let i = 0; i < navLinks.length; i++) {
       navLinks[i].addEventListener("click", (e) => {
+        document.querySelector(".navigation").classList.remove("sticky-top");
         document.querySelector(".nav-link.active").classList.remove("active");
         e.target.classList.add("active");
         this.getGame(e.target.dataset.category);
