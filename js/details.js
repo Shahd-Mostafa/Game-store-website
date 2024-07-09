@@ -5,6 +5,7 @@ export class Details {
     document.getElementById("closeBtn").addEventListener("click", function () {
       document.querySelector(".website-header").classList.remove("d-none");
       document.querySelector(".navigation").classList.remove("d-none");
+      document.querySelector(".navigation").classList.add("sticky-top");
       document.querySelector(".games").classList.remove("d-none");
       document.querySelector(".details").classList.add("d-none");
     });
